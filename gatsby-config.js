@@ -29,7 +29,6 @@ module.exports = {
         name: `Mental Fidget`,
         short_name: `Relax`,
         start_url: `/`,
-<<<<<<< HEAD
         background_color: `#2E4500`,
         theme_color: `#2E4500`,
         display: `standalone`,
@@ -45,12 +44,6 @@ module.exports = {
           purpose: `maskable`,
         },
         cache_busting_mode: "none",
-=======
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
->>>>>>> parent of 0c49d1a... Fixes typo and header color
       },
     },
 
