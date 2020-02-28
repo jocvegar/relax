@@ -116,11 +116,11 @@ const IndexPage = () => {
                   color="textSecondary"
                   gutterBottom
                 >
-                  Breath
+                  Breathe
                 </Typography>
               </CardContent>
               <CardActions className={classes.cardActionRoot}>
-                <Link to="/breath/" className={classes.link}>
+                <Link to="/breathe/" className={classes.link}>
                   <Button variant="outlined" size="large" color="primary">
                     Go
                   </Button>
