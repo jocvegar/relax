@@ -116,7 +116,7 @@ const IndexPage = () => {
                   color="textSecondary"
                   gutterBottom
                 >
-                  Breath
+                  Breathe
                 </Typography>
               </CardContent>
               <CardActions className={classes.cardActionRoot}>
