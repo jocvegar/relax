@@ -52,7 +52,7 @@ const Header = ({ siteTitle, text, props }) => {
               <Typography variant="button" style={{ paddingRight: 5 }}>
                 <div className={classes.menuButton}>
                   <Link
-                    to="/breath"
+                    to="/about/"
                     style={{
                       color: `white`,
                       textDecoration: `none`,

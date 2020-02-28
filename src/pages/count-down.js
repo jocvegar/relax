@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 const CountDown = () => (
   <Layout>
     <SEO title="Count down" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <h1>Hi CountDown</h1>
+    <p>Will soon fix this</p>
   </Layout>
 )
 
