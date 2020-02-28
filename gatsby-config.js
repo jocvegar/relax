@@ -33,30 +33,22 @@ module.exports = {
         theme_color: `#2E4500`,
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
-        icons: [
-          {
-            src: `src/images/icon_144.png`,
-            sizes: `144x144`,
-            type: `image/png`,
-          },
-        ],
         icon_options: {
           purpose: `maskable`,
         },
-        cache_busting_mode: "none",
       },
     },
-
+    `gatsby-plugin-offline`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/index/`, `/breathe/`],
-        workboxConfig: {
-          globPatterns: ["**/*"],
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/index/`, `/breathe/`],
+    //     workboxConfig: {
+    //       globPatterns: ["**/*"],
+    //     },
+    //   },
+    // },
   ],
 }
