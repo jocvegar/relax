@@ -43,6 +43,7 @@ module.exports = {
         icon_options: {
           purpose: `maskable`,
         },
+        cache_busting_mode: "none",
       },
     },
 
@@ -52,6 +53,9 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/index/`, `/breathe/`],
+        workboxConfig: {
+          globPatterns: ["**/*"],
+        },
       },
     },
   ],
