@@ -136,7 +136,7 @@ const IndexPage = () => {
                   color="textSecondary"
                   gutterBottom
                 >
-                  Count Down
+                  CountDown
                 </Typography>
               </CardContent>
               <CardActions className={classes.cardActionRoot}>
