@@ -7,6 +7,8 @@ import Typography from "@material-ui/core/Typography"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import { makeStyles } from "@material-ui/core/styles"
+import IconButton from "@material-ui/core/IconButton"
+import InstagramIcon from "@material-ui/icons/Instagram"
 
 function ElevationScroll(props) {
   const { children } = props
@@ -25,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1),
   },
 }))
 
@@ -49,9 +51,10 @@ const Header = ({ siteTitle, text, props }) => {
                   {siteTitle}
                 </Link>
               </Typography>
-              <Typography variant="button" style={{ paddingRight: 5 }}>
-                <div className={classes.menuButton}>
+              <Typography variant="button" style={{ paddingRight: 2 }}>
+                <div>
                   <Link
+                    className={classes.menuButton}
                     to="/about/"
                     style={{
                       color: `white`,
@@ -60,6 +63,15 @@ const Header = ({ siteTitle, text, props }) => {
                   >
                     About
                   </Link>
+                  <IconButton
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    className={classes.menuButton}
+                    href="https://www.instagram.com/antsy.ant/"
+                  >
+                    <InstagramIcon />
+                  </IconButton>
                 </div>
               </Typography>
             </Toolbar>
